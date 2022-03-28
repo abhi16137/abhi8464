@@ -1,0 +1,40 @@
+--> sudo su
+--> sudo apt update
+--> sudo apt install default-jre -y
+--> sudo apt install default-jdk -y
+--> java --version
+--> hostname tomcat
+--> sudo su 
+--> cd /opt
+--> wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.54/bin/apache-tomcat-9.0.54.tar.gz
+--> ls
+--> tar -vxfz apache-tomcat-8.5.4z.tar.gz
+--> ls 
+--> mv apache-tomcat-8.5.43 tomcat
+--> ls
+--> cd tomcat/
+--> ls
+--> cd bin/
+--> ls
+--> vi /opt/tomcat/webapps/manager/META-INF/context.xml
+--> vi /opt/tomcat/webapps/host-manager/META-INF/context.xml 
+	INSERT "i"    EXIT "Esc"    ex  (<!-- <value class--------------
+		                        allows---------------"/> -->
+	:wq ENTER
+--> ls
+						no use (--> opt/tomcat/bin#ls)
+--> pwd
+--> cd ..
+--> pwd
+--> ls
+--> cd conf/
+--> ls
+--> vi tomcat-users.xml
+	( <role rolename="manager-gui"/>
+	  <user username="admin" password="admin" roles="manager-gui"/>
+--> ls
+--> cd ..
+--> cd bin/
+--> ls  
+-->    sudo su
+--> ./shoutdown.sh
